@@ -8,6 +8,8 @@ import Faqs from './components/faqs'
 import Timeline from './components/timeline'
 import Prizes from './components/prizes'
 import Partner from './components/partner'
+import Privacy from './components/privacy'
+import Footer from './components/footer'
 
 function Home() {
   return (
@@ -21,6 +23,8 @@ function Home() {
       <Timeline/>
       <Prizes/>
       <Partner/>
+      <Privacy/>
+      <Footer/>
     </div>
   )
 }

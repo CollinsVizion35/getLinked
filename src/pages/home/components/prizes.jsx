@@ -9,7 +9,7 @@ import star5 from "/star5.png";
 
 function Prizes() {
   return (
-    <div className="h-[100vh] max-w-[1440px] flex flex-row  px-[5vw] bg-[#110b20] relative">
+    <div className="h-[100vh] max-w-[1440px] flex lg:flex-row flex-col px-[5vw] bg-[#110b20] relative">
 
         
             {/*  designs--------------------------------------------------------------------------- */}
@@ -22,12 +22,7 @@ function Prizes() {
             <img src={star5} className="absolute top-[90vh] left-[17%] " />
             <img src={satagra} className="absolute top-[19vh] left-[77%] z-[0]" />
             {/*  designs  ends--------------------------------------------------------------------------- */}
-
-      <div className="w-[40%] py-[5vh] flex items-baseline z-[999]">
-        <img src={cup} alt="trophy" className="h-[70vh] mt-auto mb-[5vh]"/>
-      </div>
-      <div className="w-[60%] py-[5vh] flex flex-col items-center">
-        <div>
+            <div className="block lg:hidden text-center items-center">
           <div className="text-[1.5rem] font-bold mb-6 z-[999]">
             Prizes and
             <br />
@@ -39,7 +34,24 @@ function Prizes() {
             for participants.
           </div>
         </div>
-        <img src={rewards} alt="reward" className="mt-[5vh] h-[60vh]"/>
+
+      <div className="lg:w-[40%] py-[5vh] flex items-baseline z-[999]">
+        <img src={cup} alt="trophy" className="lg:h-[70vh] h-[30vh] mt-auto lg:mb-[5vh]"/>
+      </div>
+      <div className="lg:w-[60%] lg:py-[5vh] flex flex-col items-center">
+        <div className="lg:block hidden">
+          <div className="text-[1.5rem] font-bold mb-6 z-[999]">
+            Prizes and
+            <br />
+            <span className="text-[#d434fe] w-[50%]">Rewards</span>
+          </div>
+          <div>
+            Highlight of the prizes or rewards for winners and
+            <br />
+            for participants.
+          </div>
+        </div>
+        <img src={rewards} alt="reward" className="lg:mt-[5vh] lg:h-[60vh] h-[30vh]"/>
       </div>
     </div>
   );
