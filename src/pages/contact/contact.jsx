@@ -4,7 +4,7 @@ import ContactBox from './components/contactBox'
 
 function Contact() {
   return (
-    <div>
+    <div className='mx-auto flex items-center justify-center'>
       <Nav/>
       <ContactBox/>
     </div>

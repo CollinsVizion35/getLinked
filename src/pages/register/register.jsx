@@ -4,7 +4,7 @@ import RegisterBox from './components/registerBox'
 
 function Register() {
   return (
-    <div>
+    <div  className='mx-auto flex items-center justify-center'>
       <Nav/>
       <RegisterBox/>
     </div>
