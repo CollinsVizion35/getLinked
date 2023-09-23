@@ -3,10 +3,11 @@ import React from "react";
 import satapu from "/star pu.png";
 import star4 from "/star4.png";
 import star5 from "/star5.png";
+import { Fade } from "react-awesome-reveal";
 
 function Timeline() {
   return (
-    <div className="lg:h-[170vh]  w-[100vw] lg:max-w-[1440px] flex flex-col items-center justify-center px-[5vw] py-[5vh] relative">
+    <Fade duration={5000}><div className="lg:h-[170vh]  w-[100vw] lg:max-w-[1440px] flex flex-col items-center justify-center px-[5vw] py-[5vh] relative">
       {/*  designs--------------------------------------------------------------------------- */}
 
       <img src={satapu} className="twink1 absolute top-[28vh] left-[30%]" />
@@ -145,7 +146,7 @@ function Timeline() {
         </div>
       </div>
 
-      <div className="hidden lg:flex flex-col w-[100%] text-[1.5vh]">
+      <Fade duration={5000}></Fade><div className="hidden lg:flex flex-col w-[100%] text-[1.5vh]">
         <div className="w-[100%] mt-[15vh]">
           <div className="flex flex-row space-x-6 items-center justify-around">
             <div className=" w-[40%] text-end">
@@ -280,7 +281,7 @@ function Timeline() {
           </div>
         </div>
       </div>
-    </div>
+    </div></Fade>
   );
 }
 
