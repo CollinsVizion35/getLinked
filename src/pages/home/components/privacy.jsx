@@ -11,7 +11,7 @@ import { JackInTheBox, Slide } from "react-awesome-reveal";
 
 function Privacy() {
   return (
-    <div className="lg:h-[100vh] h-fit   max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col lg:text-start text-center items-center px-[5vw] py-[5vh] relative justify-around">
+    <div className="lg:h-[100vh] h-fit  mx-auto w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col lg:text-start text-center items-center px-[5vw] py-[5vh] relative justify-around">
       {/* design ---------------------------------------------------- */}
       <div className="glow-circle absolute lg:bottom-[5vh] bottom-[80vh] z-[0] left-[15%]"></div>
       <img src={satapu} className="twink1 absolute top-[20vh] left-[45%]" />
@@ -25,53 +25,73 @@ function Privacy() {
 
       <div className="lg:w-[50%] flex flex-col space-y-6">
         <div className="space-y-3">
-          <Slide duration={5000} direction="left"><div className="text-[1.5rem] font-bold z-[999]">
-            Privacy Policy and
-            <br/>
-            <span className="text-[#d434fe] w-[50%]">Terms</span>
-          </div></Slide>
-          <Slide duration={5000} direction="left"><div className="text-[1.5vh]">Last updated on September 12, 2023</div></Slide>
+          <Slide duration={5000} direction="left">
+            <div className="text-[1.5rem] font-bold z-[999]">
+              Privacy Policy and
+              <br />
+              <span className="text-[#d434fe] w-[50%]">Terms</span>
+            </div>
+          </Slide>
+          <Slide duration={5000} direction="left">
+            <div className="text-[1.5vh]">
+              Last updated on September 12, 2023
+            </div>
+          </Slide>
         </div>
-        <Slide duration={5000} direction="left"><div className="text-[1.5vh]">
-          Below are our privacy & policy, which outline a lot of goodies. <br className="hidden lg:block"/>
-          it’s our aim to always take of our participant
-        </div></Slide>
-        <Slide duration={5000} direction="left"><div className="text-[1.5vh] flex flex-col border rounded-[5px] border-[#d434fe] w-[90%] space-y-6 p-10 mx-auto lg:mx-0">
-          <div>
-            At getlinked tech Hackathon 1.0, we value your privacy
-            <br className="hidden lg:block"/>
-            and are committed to protecting your personal information.
-            <br className="hidden lg:block"/>
-            This Privacy Policy outlines how we collect, use, disclose, <br className="hidden lg:block"/>
-            and safeguard your data when you participate in our tech <br className="hidden lg:block"/>
-            hackathon event. By participating in our event, you consent <br className="hidden lg:block"/>
-            to the practices described in this policy.
+        <Slide duration={5000} direction="left">
+          <div className="text-[1.5vh]">
+            Below are our privacy & policy, which outline a lot of goodies.{" "}
+            <br className="hidden lg:block" />
+            it’s our aim to always take of our participant
           </div>
-          <diV>
-            <div className="text-[#d434fe]">Licensing Policy</div>
-            <div>Here are terms of our Standard License:</div>
-          </diV>
-          <div className="space-y-6">
-            <div className="flex flex-row items-start space-x-3">
-              <img src={tick} className="mr-3" /> The Standard License grants
-              you a non-exclusive right to
-              <br className="hidden lg:block"/>
-              navigate and register for our event
+        </Slide>
+        <Slide duration={5000} direction="left">
+          <div className="text-[1.5vh] flex flex-col border rounded-[5px] border-[#d434fe] w-[90%] space-y-6 p-10 mx-auto lg:mx-0">
+            <div>
+              At getlinked tech Hackathon 1.0, we value your privacy
+              <br className="hidden lg:block" />
+              and are committed to protecting your personal information.
+              <br className="hidden lg:block" />
+              This Privacy Policy outlines how we collect, use, disclose,{" "}
+              <br className="hidden lg:block" />
+              and safeguard your data when you participate in our tech{" "}
+              <br className="hidden lg:block" />
+              hackathon event. By participating in our event, you consent{" "}
+              <br className="hidden lg:block" />
+              to the practices described in this policy.
             </div>
-            <div className="flex flex-row items-start space-x-3">
-              <img src={tick} className="mr-3" /> You are licensed to use the
-              item available at any free source
-              <br className="hidden lg:block"/>
-              sites, for your project developement
+            <diV>
+              <div className="text-[#d434fe]">Licensing Policy</div>
+              <div>Here are terms of our Standard License:</div>
+            </diV>
+            <div className="space-y-6">
+              <div className="flex flex-row items-start space-x-3">
+                <img src={tick} className="mr-3" /> The Standard License grants
+                you a non-exclusive right to
+                <br className="hidden lg:block" />
+                navigate and register for our event
+              </div>
+              <div className="flex flex-row items-start space-x-3">
+                <img src={tick} className="mr-3" /> You are licensed to use the
+                item available at any free source
+                <br className="hidden lg:block" />
+                sites, for your project developement
+              </div>
             </div>
+            <button className="button w-fit flex items-center justify-center mx-auto">
+              Read More
+            </button>
           </div>
-          <button className="w-fit flex items-center justify-center mx-auto">
-            Read More
-          </button>
-        </div></Slide>
+        </Slide>
       </div>
       <div className="relative w-[50%] mt-[5vh] lg:mt-0">
-        <JackInTheBox duration={5000}><img src={manLock} alt="man on lock" className="z-[99] lg:h-[80vh] h-[50vh] w-[70%] ml-[15%]" /></JackInTheBox>
+        <JackInTheBox duration={5000}>
+          <img
+            src={manLock}
+            alt="man on lock"
+            className="z-[99] lg:h-[80vh] h-[50vh] w-[70%] ml-[15%]"
+          />
+        </JackInTheBox>
         <img
           src={secure}
           alt="secure logo"

@@ -1,15 +1,9 @@
 import { useEffect, useState, createContext, useContext, useRef } from "react";
 
-
 export const AppContext = createContext();
 
 export const AppContextPage = ({ children }) => {
-  
-  
   const confirmedRef = useRef(null);
-
-  
-
 
   return (
     <>

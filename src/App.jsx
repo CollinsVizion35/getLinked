@@ -8,7 +8,6 @@ import Register from "./pages/register/register";
 import { AppContextPage } from "./contexts/AppContext";
 import Start from "./pages/3dEffect/start";
 
-
 export const AppContext = createContext();
 
 function App() {
@@ -17,33 +16,12 @@ function App() {
       <AppContextPage>
         <DeadlineContextPage>
           <Routes>
-            
-          <Route
-              path="/"
-              element={
-                <Start />
-              }
-            />
-            <Route
-              path="/home"
-              element={
-                <Home />
-              }
-            />
+            <Route path="/" element={<Start />} />
+            <Route path="/home" element={<Home />} />
 
-            <Route
-              path="/contact_us"
-              element={
-                <Contact />
-              }
-            />
+            <Route path="/contact_us" element={<Contact />} />
 
-            <Route
-              path="/register"
-              element={
-                <Register />
-              }
-            />
+            <Route path="/register" element={<Register />} />
           </Routes>
         </DeadlineContextPage>
       </AppContextPage>
