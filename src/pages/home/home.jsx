@@ -13,7 +13,7 @@ import Footer from './components/footer'
 
 function Home() {
   return (
-    <div className='mx-auto flex items-center justify-center'>
+    <div className='mx-auto w-[100%]  flex flex-col items-center justify-center'>
       <Nav/>
       <Hero/>
       <Intro/>
