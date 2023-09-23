@@ -6,10 +6,11 @@ import satagra from '/sata gra.png'
 import satapu from '/star pu.png'
 import star4 from "/star4.png";
 import star5 from "/star5.png";
+import { JackInTheBox } from "react-awesome-reveal";
 
 function Prizes() {
   return (
-    <div className="lg:h-[100vh] py-6 max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col px-[5vw] bg-[#110b20] relative">
+    <JackInTheBox duration={5000}><div className="lg:h-[100vh] py-6 max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col px-[5vw] bg-[#110b20] relative">
 
         
             {/*  designs--------------------------------------------------------------------------- */}
@@ -53,7 +54,7 @@ function Prizes() {
         </div>
         <img src={rewards} alt="reward" className="lg:mt-[5vh] lg:h-[60vh] h-[30vh]"/>
       </div>
-    </div>
+    </div></JackInTheBox>
   );
 }
 
