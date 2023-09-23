@@ -48,14 +48,14 @@ function Faqs () {
 
 
   return (
-    <div className='lg:h-[100vh] h-[140vh] max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col items-center px-[5vw] border-b border-[#2c233e] relative'>
+    <div className='lg:h-[100vh] h-fit py-6 max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col items-center px-[5vw] border-b border-[#2c233e] relative'>
 
          {/*  designs--------------------------------------------------------------------------- */}
-            <img src={satapu} className="absolute top-[10vh] left-[2%]" />
-            <img src={star4} className="absolute top-[48vh] left-[50%]" />
-            <img src={star5} className="absolute top-[85vh] left-[81%]" />
-            <img src={satagra} className="absolute top-[25vh] left-[55%]" />
-            <img src={satagra} className="absolute top-[10vh] left-[67%]" />
+            <img src={satapu} className="twink4 absolute top-[10vh] left-[2%]" />
+            <img src={star4} className="twink3 absolute top-[48vh] left-[50%]" />
+            <img src={star5} className="twink5 absolute top-[85vh] left-[81%]" />
+            <img src={satagra} className="twink2 absolute top-[25vh] left-[55%]" />
+            <img src={satagra} className="twink6 absolute top-[10vh] left-[67%]" />
             <img src={ques} className="absolute bottom-[40vh] lg:top-[9vh] left-[22%] lg:left-[53%] h-[8vh]" />
             <img src={ques2} className="absolute bottom-[42vh] lg:top-[5vh] left-[40%] lg:left-[61%] h-[8vh]" />
             <img src={ques} className="absolute bottom-[39vh] lg:top-[10vh] left-[53%] lg:left-[73%] h-[8vh]" />

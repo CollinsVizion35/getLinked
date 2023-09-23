@@ -8,15 +8,15 @@ import star5 from "/star5.png";
 
 function Criteria () {
   return (
-    <div className='lg:h-[100vh] h-[140vh]  max-w-[100vw] lg:max-w-[1440px] lg:text-start text-center flex lg:flex-row flex-col items-center px-[5vw] border-b border-[#2c233e] relative'>
+    <div className='lg:h-[100vh] h-fit py-6  max-w-[100vw] lg:max-w-[1440px] lg:text-start text-center flex lg:flex-row flex-col items-center px-[5vw] border-b border-[#2c233e] relative'>
 
         
             {/*  designs--------------------------------------------------------------------------- */}
-            <div className="glow-circle absolute z-[0] bottom-[10vh]"></div>
-            <div className="glow-circle absolute bottom-[-10vh] z-[0] right-0"></div>
-            <img src={satapu} className="absolute top-[6vh] left-[12vw]" />
-            <img src={star4} className="absolute top-[50vh] left-[24vw]" />
-            <img src={star5} className="absolute top-[80vh] left-[35vw]" />
+            <div className="glow-circle absolute z-[0] lg:bottom-[10vh] top-[20vh] left-[25%] lg:left-auto"></div>
+            <div className="glow-circle absolute lg:bottom-[-10vh] top-[90vh] z-[0] right-0"></div>
+            <img src={satapu} className="twink1 absolute top-[6vh] left-[12vw]" />
+            <img src={star4} className="twink5 absolute top-[50vh] left-[24vw]" />
+            <img src={star5} className="twink2 absolute top-[80vh] left-[35vw]" />
             {/*  designs  ends--------------------------------------------------------------------------- */}
 
       <div className='w-[50%] relative mt-[3vh] lg:mt-0'>

@@ -5,38 +5,48 @@ import Home from "./pages/home/home";
 import { DeadlineContextPage } from "./contexts/deadlineContext";
 import Contact from "./pages/contact/contact";
 import Register from "./pages/register/register";
+import { AppContextPage } from "./contexts/AppContext";
+import Start from "./pages/3dEffect/start";
 
 
 export const AppContext = createContext();
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <DeadlineContextPage>
-        <Routes>
+      <AppContextPage>
+        <DeadlineContextPage>
+          <Routes>
+            
           <Route
-            path="/"
-            element={
-              <Home />
-            }
-          />
+              path="/"
+              element={
+                <Start />
+              }
+            />
+            <Route
+              path="/home"
+              element={
+                <Home />
+              }
+            />
 
-          <Route
-            path="/contact_us"
-            element={
-              <Contact />
-            }
-          />
+            <Route
+              path="/contact_us"
+              element={
+                <Contact />
+              }
+            />
 
-          <Route
-            path="/register"
-            element={
-              <Register />
-            }
-          />
-        </Routes>
-      </DeadlineContextPage>
+            <Route
+              path="/register"
+              element={
+                <Register />
+              }
+            />
+          </Routes>
+        </DeadlineContextPage>
+      </AppContextPage>
     </div>
   );
 }

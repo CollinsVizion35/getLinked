@@ -10,16 +10,16 @@ import star5 from "/star5.png";
 
 function Privacy() {
   return (
-    <div className="lg:h-[100vh] h-[150vh]   max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col lg:text-start text-center items-center px-[5vw] py-[5vh] relative justify-around">
+    <div className="lg:h-[100vh] h-fit   max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col lg:text-start text-center items-center px-[5vw] py-[5vh] relative justify-around">
       {/* design ---------------------------------------------------- */}
-      <div className="glow-circle absolute bottom-[5vh] z-[0] left-[15%]"></div>
-      <img src={satapu} className="absolute top-[20vh] left-[45%]" />
-      <img src={satagra} className="absolute top-[60vh] left-[62%]" />
-      <img src={satagra} className="absolute top-[70vh] left-[2%]" />
-      <img src={star5} className="absolute top-[22vh] right-[20%]" />
-      <img src={star5} className="absolute top-[75vh] left-[54%]" />
-      <img src={star4} className="absolute top-[13vh] left-[25%]" />
-      <img src={star4} className="absolute top-[67vh] right-[18%]" />
+      <div className="glow-circle absolute lg:bottom-[5vh] bottom-[80vh] z-[0] left-[15%]"></div>
+      <img src={satapu} className="twink1 absolute top-[20vh] left-[45%]" />
+      <img src={satagra} className="twink2 absolute top-[60vh] left-[62%]" />
+      <img src={satagra} className="twink3 absolute top-[70vh] left-[2%]" />
+      <img src={star5} className="twink4 absolute top-[22vh] right-[20%]" />
+      <img src={star5} className="twink5 absolute top-[75vh] left-[54%]" />
+      <img src={star4} className="twink6 absolute top-[13vh] left-[25%]" />
+      <img src={star4} className="twink4 absolute top-[67vh] right-[18%]" />
       {/* design ends--------------------------------------------- */}
 
       <div className="lg:w-[50%] flex flex-col space-y-6">

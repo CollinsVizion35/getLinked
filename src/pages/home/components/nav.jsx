@@ -23,7 +23,8 @@ function Nav () {
 
   return (
     <>
-      <div className='lgView h-[15vh] pt-[5vh] pb-[2vh] px-[5%] hidden lg:flex flex-row lg:max-w-[1440px] w-[100%] items-center mx-auto border-b border-[#2c233e] z-[99999999999999]'>
+      <div className='lgView fixed top-0 left-0 bg-[#150e28] bg-opacity-90 ml-0 w-[100%] border-b border-[#2c233e] z-[99999999999999]'>
+        <div className=' h-[15vh] hidden items-center  lg:max-w-[1440px] mx-auto  pt-[5vh] pb-[2vh] px-[5%] lg:flex flex-row'>
         <div
           className='w-[30vw] text-[2rem] font-bold tracking-tight cursor-pointer'
           onClick={() => navigate('/')}
@@ -33,11 +34,11 @@ function Nav () {
         <div className='w-[60vw] flex flex-row items-center'>
           <div className='w-[46vw] float-left flex justify-end'>
             <div className='flex flex-row space-x-20'>
-              <div className=' cursor-pointer'>Timeline</div>
-              <div className=' cursor-pointer'>Overview</div>
-              <div className=' cursor-pointer'>FAQs</div>
+              <div className=' cursor-pointer nav'>Timeline</div>
+              <div className=' cursor-pointer nav'>Overview</div>
+              <div className=' cursor-pointer nav'>FAQs</div>
               <div
-                className={`cursor-pointer ${
+                className={`cursor-pointer nav ${
                   isPageInRoute('/contact_us')
                     ? 'contact-gradient'
                     : 'text-[#fcfcfc]'
@@ -68,6 +69,7 @@ function Nav () {
             )}
           </div>
         </div>
+        </div>
       </div>
 
       <div className='smView pt-[4vh] pb-[4vh] px-[5%] flex flex-row lg:hidden justify-between border-b border-[#2c233e]'>
@@ -87,11 +89,11 @@ function Nav () {
           isMenuVisible ? 'opacity-100 h-[50vh] w-[100%]' : 'opacity-0 max-h-0'
         }`}
       >
-        <li>Timeline</li>
-        <li>Overview</li>
-        <li>FAQs</li>
+        <li className='nav'>Timeline</li>
+        <li className='nav'>Overview</li>
+        <li className='nav'>FAQs</li>
         <div
-                className={`cursor-pointer ${
+                className={`cursor-pointer nav ${
                   isPageInRoute('/contact_us')
                     ? 'contact-gradient'
                     : 'text-[#fcfcfc]'

@@ -11,8 +11,8 @@ function Intro() {
         <div className='lg:min-h-[50vh] min-h-[100vh]  max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col items-center px-[5%] relative border-b border-[#2c233e]'>
 
             {/*  designs--------------------------------------------------------------------------- */}
-            <img src={satagra} className="absolute top-[20vh] left-[5%]" />
-            <img src={satapu} className="absolute top-[20vh] right-[10%]" />
+            <img src={satagra} className="twink6 absolute top-[20vh] left-[5%]" />
+            <img src={satapu} className="twink4 absolute top-[20vh] right-[10%]" />
             <img src={arrow} className="absolute top-[47vh] right-[65%] w-[5%]" />
             {/*  designs  ends--------------------------------------------------------------------------- */}
 

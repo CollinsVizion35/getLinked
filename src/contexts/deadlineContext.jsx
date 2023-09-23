@@ -15,7 +15,7 @@ const getDaysBetweenDates = (startDate, endDate) => {
   return Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
 };
 
-const daysDifference = getDaysBetweenDates(currentDate, new Date("2023-09-27")); //"year-month-day"
+const daysDifference = getDaysBetweenDates(currentDate, new Date("2023-09-26")); //"year-month-day"
 // const daysDifference = getDaysBetweenDates(currentDate, new Date("2023-08-11")) - 1;
 
 const currentYear = now.getUTCFullYear();

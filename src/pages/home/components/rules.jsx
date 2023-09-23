@@ -12,9 +12,9 @@ function Rules() {
 
             {/*  designs--------------------------------------------------------------------------- */}
             <div className="glow-circle absolute z-[0] left-[20vw] top-[10vh]"></div>
-            <div className="glow-circle absolute bottom-[-2vh] z-[0] right-[-5vw]"></div>
-            <img src={star4} className="absolute top-[15vh] left-[20vw]" />
-            <img src={star5} className="absolute top-[45vh] left-[35vw]" />
+            <div className="glow-circle absolute lg:bottom-[-2vh] top-[50vh] z-[0] right-[-5vw]"></div>
+            <img src={star4} className="twink2 absolute top-[15vh] left-[20vw]" />
+            <img src={star5} className="twink6 absolute top-[45vh] left-[35vw]" />
             {/*  designs  ends--------------------------------------------------------------------------- */}
 
 

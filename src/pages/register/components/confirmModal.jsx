@@ -7,10 +7,18 @@ import satagra from '/sata gra.png'
 import satapu from '/star pu.png'
 import star4 from '/star4.png'
 import star5 from '/star5.png'
+import { AppPass } from "../../../contexts/AppContext";
 
 function ConfirmModal() {
+  
+  const {confirmedRef} = AppPass()
+
+  const handleClose = () => {
+    confirmedRef.current.style.display = "none";
+  }
+
   return (
-    <div className="h-[100vh] w-[100vw] bg-[#150e28] lg:max-w-[1440px] flex flex-row items-center fixed ml-0 bg-opacity-80  top-1/2 left-1/2 p-10 z-[1000]"
+    <div ref={confirmedRef}  className="h-[100vh] w-[100vw] bg-[#150e28]  flex flex-row items-center fixed ml-0 bg-opacity-80  top-1/2 left-1/2 p-10 z-[1000]"
     style={{ transform: "translate(-50%, -50%)", display: "none" }}>
 
         
@@ -37,7 +45,7 @@ function ConfirmModal() {
           check your mail box for next step</div>
           <img src={wink} alt="wink" className="h-[50%] mt-auto"/>
         </div>
-        <button className=" w-full">Back</button>
+        <button className=" w-full" onClick={handleClose}>Back</button>
       </div>
     </div>
   );

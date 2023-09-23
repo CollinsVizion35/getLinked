@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios';
 
 import linkedIn from '/linkedIn.png'
 import insta from '/insta.png'
@@ -10,7 +11,50 @@ import satapu from '/star pu.png'
 import star4 from '/star4.png'
 import star5 from '/star5.png'
 
-function ContactBox () {
+function ContactBox() {
+
+  // Contact form POST API --------------------------------------------------------------------------------------------
+  const [email, setEmail] = useState('')
+  const [first_name, setFirst_name] = useState('')
+  const [team_name, setTeam_name] = useState('')
+  const [topic, setTopic] = useState('')
+  const [message, setMessage] = useState('')
+
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+
+    const data = JSON.stringify({
+      "email": email,
+      "team_name": first_name,
+      "first_name": first_name,
+      "topic": topic,
+      "message": message,
+    });
+
+    console.log(data)
+
+    const config = {
+      method: 'post',
+      maxBodyLength: Infinity,
+      url: 'https://backend.getlinked.ai/hackathon/contact-form',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      data: data
+    };
+
+    try {
+      const response = await axios(config);
+      console.log('Message sent successfully!', response.data);
+      alert('Message sent successfully!')
+    } catch (error) {
+      console.error('Error response data:', error.response ? error.response.data : 'No response data');
+      alert('Message sent Failed!')
+    }
+  };
   const inputStyles = {
     fontSize: '0.8rem',
     verticalAlign: 'top',
@@ -18,18 +62,18 @@ function ContactBox () {
   }
 
   return (
-    <div className='lg:h-[85vh] h-[87vh] w-[100vw] lg:max-w-[1440px] flex flex-row items-center px-[10vw]'>
+    <div className='lg:h-[85vh] h-[87vh] lg:mt-[15vh] w-[100vw] lg:max-w-[1440px] flex flex-row items-center px-[10vw]'>
       {/* design ---------------------------------------------------- */}
       <div className='glow-circle absolute left-[5%] top-[20vh] z-[-99]'></div>
       <div className='glow-circle absolute bottom-[5vh] right-0 z-[-99]'></div>
-      <img src={circle} className='absolute top-[15vh] left-[10%] lg:hidden' />
-      <img src={satagra} className='absolute top-[25vh] left-[10%]' />
-      <img src={satapu} className='absolute top-[80vh] left-[48%]' />
-      <img src={star5} className='absolute top-[90vh] right-[10%]' />
-      <img src={star4} className='absolute top-[16vh] right-[10%]' />
+      <img src={circle} className='twink1 absolute top-[15vh] left-[10%] lg:hidden' />
+      <img src={satagra} className='twink3 absolute top-[25vh] left-[10%]' />
+      <img src={satapu} className='twink4 absolute top-[80vh] left-[48%]' />
+      <img src={star5} className='twink2 absolute top-[90vh] right-[10%]' />
+      <img src={star4} className='twink5 absolute top-[16vh] right-[10%]' />
       {/* design ends ---------------------------------------------------- */}
 
-      
+
       <div className='w-[50%] hidden lg:flex flex-col space-y-3'>
         <div className='text-[#d434fe] text-[1.5em] font-bold'>
           Get in touch
@@ -73,28 +117,47 @@ function ContactBox () {
             <br />
             Let us know about it!
           </div>
-          <form className='flex flex-col space-y-6'>
+          <form onSubmit={handleSubmit} className='flex flex-col space-y-6'>
             <input
               type='text'
               className=' bg-transparent border rounded-[2px] text-[0.8em] border-[#918d99] w-[100%] mx-auto p-2'
               placeholder='First Name'
               style={inputStyles}
+              name="first_name"
+              id="first_name"
+              value={first_name}
+              onChange={(event) =>
+                setFirst_name(event.target.value)
+              }
             />
             <input
-              type='text'
+              type='email'
               className=' bg-transparent border rounded-[2px] text-[0.8em] border-[#918d99] w-[100%] mx-auto p-2'
               placeholder='Mail'
               style={inputStyles}
+              name="email"
+              id="email"
+              value={email}
+              onChange={(event) =>
+                setEmail(event.target.value)
+              }
             />
             <textarea
               type='text'
               className=' bg-transparent border rounded-[2px] text-[0.8em] border-[#918d99] w-[100%] mx-auto p-2 h-[20vh]'
               placeholder='Message'
               style={inputStyles}
+              name="message"
+              id="message"
+              value={message}
+              onChange={(event) =>
+                setMessage(event.target.value)
+              }
             />
+            <button onClick={handleSubmit} className='w-fit mx-auto'>Submit</button>
+
           </form>
 
-          <button className='w-fit mx-auto'>Submit</button>
         </div>
       </div>
 
@@ -111,12 +174,18 @@ function ContactBox () {
             Email us below to any question related <br />
             to our event
           </div>
-          <form className='flex flex-col space-y-6'>
+          <form onSubmit={handleSubmit} className='flex flex-col space-y-6'>
             <input
               type='text'
               className=' bg-transparent border rounded-[2px] text-[0.8em] border-[#918d99] w-[100%] mx-auto p-2'
               placeholder="Team's Name"
               style={inputStyles}
+              name="first_name"
+              id="first_name"
+              value={first_name}
+              onChange={(event) =>
+                setFirst_name(event.target.value)
+              }
             />
 
             <input
@@ -124,22 +193,40 @@ function ContactBox () {
               className=' bg-transparent border rounded-[2px] text-[0.8em] border-[#918d99] w-[100%] mx-auto p-2'
               placeholder='Topic'
               style={inputStyles}
+              name="topic"
+              id="topic"
+              value={topic}
+              onChange={(event) =>
+                setTopic(event.target.value)
+              }
             />
             <input
-              type='text'
+              type='email'
               className=' bg-transparent border rounded-[2px] text-[0.8em] border-[#918d99] w-[100%] mx-auto p-2'
               placeholder='Email'
               style={inputStyles}
+              name="email"
+              id="email"
+              value={email}
+              onChange={(event) =>
+                setEmail(event.target.value)
+              }
             />
             <textarea
               type='text'
               className=' bg-transparent border rounded-[2px] text-[0.8em] border-[#918d99] w-[100%] mx-auto p-2 h-[20vh]'
               placeholder='Message'
               style={inputStyles}
+              name="message"
+              id="message"
+              value={message}
+              onChange={(event) =>
+                setMessage(event.target.value)
+              }
             />
-          </form>
+            <button onClick={handleSubmit} className='w-fit mx-auto'>Submit</button>
 
-          <button className='w-fit mx-auto'>Submit</button>
+          </form>
 
           <div className='flex flex-col space-y-3 items-center mt-[3vh]'>
             <div className='text-[#d434fe] text-[0.8em]'>Share on</div>

@@ -6,12 +6,12 @@ import star5 from "/star5.png";
 
 function Timeline() {
   return (
-    <div className="min-h-[170vh]  max-w-[100vw] lg:max-w-[1440px] flex flex-col items-center px-[5vw] py-[5vh] relative">
+    <div className="lg:h-[170vh]  w-[100vw] lg:max-w-[1440px] flex flex-col items-center justify-center px-[5vw] py-[5vh] relative">
       {/*  designs--------------------------------------------------------------------------- */}
 
-      <img src={satapu} className="absolute top-[28vh] left-[30%]" />
-      <img src={star4} className="absolute top-[155vh] left-[22%]" />
-      <img src={star5} className="absolute top-[78vh] left-[75%]" />
+      <img src={satapu} className="twink1 absolute top-[28vh] left-[30%]" />
+      <img src={star4} className="twink2 absolute top-[155vh] left-[22%]" />
+      <img src={star5} className="twink4 absolute top-[78vh] left-[75%]" />
       <div className="bar h-[10vh] lg:h-[18vh] left-[20%] lg:left-auto absolute min-w-[5px] top-[22vh] lg:top-[19vh]"></div>
       <div className="bar h-[10vh] lg:h-[15vh] left-[20%] lg:left-auto absolute min-w-[5px] top-[42vh] lg:top-[45vh]"></div>
       <div className="bar h-[10vh] lg:h-[15vh] left-[20%] lg:left-auto absolute min-w-[5px] top-[62vh] lg:top-[68vh]"></div>
@@ -19,7 +19,7 @@ function Timeline() {
       <div className="bar h-[10vh] lg:h-[15vh] left-[20%] lg:left-auto absolute min-w-[5px] top-[102vh] lg:top-[115vh]"></div>
       <div className="bar h-[10vh] lg:h-[15vh] left-[20%] lg:left-auto absolute min-w-[5px] top-[122vh] lg:top-[139vh]"></div>
       {/*  designs ends--------------------------------------------------------------------------- */}
-      <div className="flex flex-col items-center text-center mb-[8vh]">
+      <div className="flex flex-col items-center text-center justify-center mb-[8vh]">
         <div className="font-bold text-[3vh]">Timeline</div>
         <div className="text-[1.5vh]">
           Here is the breakdown of the time we anticipate <br />
@@ -27,8 +27,8 @@ function Timeline() {
         </div>
       </div>
 
-      <div className="lg:hidden text-start w-[70%]">
-        <div className="flex flex-col mb-[5vh] h-[15vh] justify-between">
+      <div className="lg:hidden text-start w-[70%] flex flex-col items-center justify-center">
+        <div className="flex flex-col mb-[5vh] h-[15vh] ">
           <div className="ml-[10%]">
             <div className="text-[#d434fe] font-bold mb-[1vh] text-[0.7em]">
               Hackathon Announcement

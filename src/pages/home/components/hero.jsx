@@ -10,8 +10,10 @@ import star2 from "/star2.png";
 import star3 from "/star3.png";
 
 import Deadline from "./deadline";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate()
   const [display, setDisplay] = useState("block");
 
   useEffect(() => {
@@ -23,13 +25,13 @@ function Hero() {
   }, []);
 
   return (
-    <div className="lg:h-[85vh] h-[87vh]  max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col px-[5vw] border-b border-[#2c233e]">
+    <div className="lg:h-[85vh]  h-auto lg:mt-[15vh] mt-[0vh]  max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col px-[5vw] border-b border-[#2c233e]">
       {/*  designs--------------------------------------------------------------------------- */}
-      <div className="glow-circle absolute z-[0] left-[20vw] top-[20vh]"></div>
-      <div className="glow-circle absolute bottom-0 z-[0] right-[20vw] top-[35vh]"></div>
-      <img src={star} className="absolute top-[20vh] left-[20vw]" />
-      <img src={star2} className="absolute top-[25vh] left-[55vw]" />
-      <img src={star3} className="absolute bottom-[25vh] left-[35vw]" />
+      <div className="glow-circle absolute  left-[20vw] top-[20vh] z-[-99]"></div>
+      <div className="glow-circle lg:block hidden absolute bottom-0  right-[20vw] top-[35vh] z-[-99]"></div>
+      <img src={star} className="twink2 absolute top-[20vh] left-[20vw]" />
+      <img src={star2} className="twink5 absolute top-[25vh] left-[55vw]" />
+      <img src={star3} className="twink3 absolute bottom-[25vh] left-[35vw]" />
       {/*  designs  ends--------------------------------------------------------------------------- */}
       <div className="relative lg:hidden flex items-center">
           <div className="text-[1.5vh] flex items-center font-bold text-center mx-auto pt-[2vh]">
@@ -49,7 +51,7 @@ function Hero() {
         <div className="lg:text-[4rem] text-[2rem] text-center lg:text-start font-bold leading-tight tracking-tight">
           getlinked Tech
           <br />
-          <div className="flex flex-row items-baseline space-x-2">
+          <div className="flex flex-row items-baseline  lg:justify-normal justify-center space-x-2">
             <div className="text-center">
               Hackathon <span className="text-[#d434fe]">1.0</span>
             </div>
@@ -64,20 +66,20 @@ function Hero() {
           <br />a chance to win a Big prize
         </div>
         <div>
-          <button className="flex items-center mx-auto lg:mx-0">Register</button>
+          <button className="flex items-center mx-auto lg:mx-0 z-[99999999999]" onClick={() => navigate('/register')}>Register</button>
         </div>
 
 
 {/* deadline ----------------------------------------------------------------------- */}
-        <div className="lg:pt-[5vh]">
+        <div className="lg:pt-[5vh] lg:mx-0  mx-auto">
           <Deadline />
         </div>
 
       </div>
-      <div className="lg:w-[50%] h-[85vh] z-[9]">
+      <div className="lg:w-[50%] h-fit z-[-9] mt-[5vh] lg:mt-0">
         <div className="absolute w-full h-[85vh] hidden lg:block bg-[#150e28] z-[999999] right-0 opacity-10"></div>
         <div className="mb-[5vh] relative hidden lg:flex">
-          <div className="text-[3vh] font-bold">
+          <div className="text-[2.8vh] font-bold">
             Igniting a Revolution in HR innovation
           </div>
           <img
@@ -92,7 +94,7 @@ function Hero() {
           />
           <img
             src={boyAi}
-            className="absolute saturate-50 grayscale lg:h-[75.5vh] h-[50vh] lg:min-w-[110%] right-0"
+            className="static lg:absolute saturate-50 grayscale lg:h-[75.5vh] h-[47.5vh] lg:min-w-[110%] right-0"
           />
         </div>
       </div>
