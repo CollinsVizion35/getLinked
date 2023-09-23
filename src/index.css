@@ -250,6 +250,7 @@ button:focus-visible {
   background-color: #e5e404;
   box-shadow: 0 0 20px 20px #e5e404;
   animation: bulb 3s 1 alternate;
+  animation-delay: 4s;
   /* display: none; */
 }
 
@@ -364,6 +365,35 @@ button:focus-visible {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+.rotate1 {
+  animation: rotate1 100s linear infinite;
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.toFro {
+  animation: toFro 10s linear infinite;
+}
+@keyframes toFro {
+  0% {
+    right: 25%;
+  }
+  50% {
+    right: 0;
+  }
+  100% {
+    right: 25%;
   }
 }
 

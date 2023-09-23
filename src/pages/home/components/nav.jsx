@@ -4,6 +4,9 @@ import menu from '/menu.png'
 import back from '/back.png'
 import { useNavigate, useLocation, Link } from 'react-router-dom'
 
+
+import { Fade } from "react-awesome-reveal";
+
 function Nav () {
   const navigate = useNavigate()
 
@@ -34,10 +37,10 @@ function Nav () {
         <div className='w-[60vw] flex flex-row items-center'>
           <div className='w-[46vw] float-left flex justify-end'>
             <div className='flex flex-row space-x-20'>
-              <div className=' cursor-pointer nav'>Timeline</div>
-              <div className=' cursor-pointer nav'>Overview</div>
-              <div className=' cursor-pointer nav'>FAQs</div>
-              <div
+            <Fade direction="left" duration={3000}><div className=' cursor-pointer nav'>Timeline</div></Fade>
+            <Fade direction="left" duration={3000} delay={500}><div className=' cursor-pointer nav'>Overview</div></Fade>
+            <Fade direction="left" duration={3000} delay={1000}><div className=' cursor-pointer nav'>FAQs</div></Fade>
+            <Fade direction="left" duration={3000} delay={1500}><div
                 className={`cursor-pointer nav ${
                   isPageInRoute('/contact_us')
                     ? 'contact-gradient'
@@ -46,10 +49,10 @@ function Nav () {
                 onClick={() => navigate('/contact_us')}
               >
                 Contact
-              </div>
+              </div></Fade>
             </div>
           </div>
-          <div className='w-[8vw] ml-[6vw]'>
+          <Fade direction="left" duration={3000} delay={2000}><div className='w-[8vw] ml-[6vw]'>
             {isPageInRoute('/register') ? (
               <div>
                 <button
@@ -67,7 +70,7 @@ function Nav () {
                 Register
               </button>
             )}
-          </div>
+          </div></Fade>
         </div>
         </div>
       </div>
@@ -89,10 +92,10 @@ function Nav () {
           isMenuVisible ? 'opacity-100 h-[50vh] w-[100%]' : 'opacity-0 max-h-0'
         }`}
       >
-        <li className='nav'>Timeline</li>
-        <li className='nav'>Overview</li>
-        <li className='nav'>FAQs</li>
-        <div
+        <Fade direction="left" duration={3000}><li className='nav'>Timeline</li></Fade>
+        <Fade direction="left" duration={3000} delay={500}><li className='nav'>Overview</li></Fade>
+        <Fade direction="left" duration={3000} delay={1000}><li className='nav'>FAQs</li></Fade>
+        <Fade direction="left" duration={3000} delay={1500}><div
                 className={`cursor-pointer nav ${
                   isPageInRoute('/contact_us')
                     ? 'contact-gradient'
@@ -101,8 +104,8 @@ function Nav () {
                 onClick={() => navigate('/contact_us')}
               >
                 Contact
-              </div>
-        <div className='w-[8vw]'>
+              </div></Fade>
+              <Fade direction="left" duration={3000} delay={2000}><div className='w-[8vw]'>
             {isPageInRoute('/register') ? (
               <div>
                 <button
@@ -120,7 +123,7 @@ function Nav () {
                 Register
               </button>
             )}
-          </div>
+          </div></Fade>
       </ul>
         
       </div>

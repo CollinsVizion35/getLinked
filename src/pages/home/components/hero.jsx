@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import vector4 from "/Vector 4.png";
 import image1 from "/Image 1.png";
 import boyAi from "/man-wearing-smart-glasses-touching-virtual-screen 1.png";
@@ -9,19 +10,31 @@ import star from "/star.png";
 import star2 from "/star2.png";
 import star3 from "/star3.png";
 
+
+import { Fade, Slide } from "react-awesome-reveal";
+
 import Deadline from "./deadline";
 import { useNavigate } from "react-router-dom";
 
 function Hero() {
   const navigate = useNavigate()
-  const [display, setDisplay] = useState("block");
+  const [display, setDisplay] = useState("none");
+  
+  
+  useEffect(() => {
+    const timeout1 = setTimeout(() => {
+      setDisplay("block");
+    }, 3000);
+
+    return () => clearTimeout(timeout1);
+  }, []);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
+    const timeout2 = setTimeout(() => {
       setDisplay("none");
-    }, 2500);
+    }, 5500);
 
-    return () => clearTimeout(timeout);
+    return () => clearTimeout(timeout2);
   }, []);
 
   return (
@@ -45,10 +58,10 @@ function Hero() {
       <div className="lg:w-[50%] lg:h-full flex flex-col space-y-4 lg:pt-[20vh] z-[9] relative">
         <div
           style={{ display }}
-          className="bulb absolute left-[63%] top-[18vh]"
+          className="bulb  absolute lg:left-[65%] lg:top-[18vh] top-[-2vh] h-[3vh] left-[77%]"
         ></div>
-        <img src={bulb1} className="h-[7vh] absolute left-[63%] top-[16vh]" />
-        <div className="lg:text-[4rem] text-[2rem] text-center lg:text-start font-bold leading-tight tracking-tight">
+        <img src={bulb1} className="lg:h-[7vh] absolute lg:left-[63%] lg:top-[16vh] top-[-2vh] h-[3vh] left-[77%]" />
+        <Slide direction="left" duration={3000}><div className="lg:text-[4rem] text-[2rem] text-center lg:text-start font-bold leading-tight tracking-tight">
           getlinked Tech
           <br />
           <div className="flex flex-row items-baseline  lg:justify-normal justify-center space-x-2">
@@ -60,20 +73,20 @@ function Hero() {
               <img src={blast} className="lg:h-[4rem] h-[2rem]" />
             </div>
           </div>
-        </div>
-        <div className=" text-center lg:text-start text-[0.8em] lg:text-[1em]">
+        </div></Slide>
+        <Slide direction="left" duration={3000} delay={500}><div className=" text-center lg:text-start text-[0.8em] lg:text-[1em]">
           Participate in getlinked tech Hackathon 2023 stand
           <br />a chance to win a Big prize
-        </div>
-        <div>
+        </div></Slide>
+        <Slide direction="left" duration={3000} delay={1000}><div>
           <button className="flex items-center mx-auto lg:mx-0 z-[99999999999]" onClick={() => navigate('/register')}>Register</button>
-        </div>
+        </div></Slide>
 
 
 {/* deadline ----------------------------------------------------------------------- */}
-        <div className="lg:pt-[5vh] lg:mx-0  mx-auto">
+<Slide direction="left" duration={3000} delay={1500}><div className="lg:pt-[5vh] lg:mx-0  mx-auto">
           <Deadline />
-        </div>
+        </div></Slide>
 
       </div>
       <div className="lg:w-[50%] h-fit z-[-9] mt-[5vh] lg:mt-0">
@@ -84,13 +97,13 @@ function Hero() {
           </div>
           <img
             src={vector4}
-            className="absolute right-[25%] bottom-[-1vh] w-[30%]"
+            className="toFro absolute right-[25%] bottom-[-1vh] w-[30%]"
           />
         </div>
         <div className="relative">
           <img
             src={image1}
-            className="absolute z-[99] opacity-90 right-[20%] top-[4vh] w-[70%]"
+            className="rotate1 absolute z-[99] opacity-90 right-[20%] top-[4vh] w-[70%]"
           />
           <img
             src={boyAi}
