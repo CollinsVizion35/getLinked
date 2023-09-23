@@ -54,7 +54,7 @@ button {
   font-size: 0.9em;
   font-weight: 500;
   font-family: inherit;
-  background-image: linear-gradient(
+  background-image: -webkit-linear-gradient(
     90deg,
     hsl(288deg 99% 60%) 0%,
     hsl(287deg 99% 60%) 5%,
