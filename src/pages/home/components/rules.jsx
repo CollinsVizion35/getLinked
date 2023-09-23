@@ -8,7 +8,7 @@ import Ellipse1 from  "/Ellipse 1.png"
 function Rules() {
 
     return (
-        <div className='min-h-[50vh] max-w-[1440px] flex lg:flex-row flex-col-reverse items-center px-[5%] py-[5vh] lg:py-0 relative border-b border-[#2c233e]'>
+        <div className='min-h-[50vh]  max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col-reverse items-center px-[5%] py-[5vh] lg:py-0 relative border-b border-[#2c233e]'>
 
             {/*  designs--------------------------------------------------------------------------- */}
             <div className="glow-circle absolute z-[0] left-[20vw] top-[10vh]"></div>
@@ -20,11 +20,11 @@ function Rules() {
 
             <div className='flex  flex-col ml-[5%]'>
                 <div className='lg:text-[4.5vh] lg:text-start text-center  font-bold lg:mb-12 mb-3 leading-tight tracking-tight'>Rules and<br /><span className='text-[#d434fe]'>Guidelines</span></div>
-                <div className='lg:text-[80%] lg:text-start text-center text-[1.1em]'>Our tech hackathon is a melting pot of visionaries, and its purpose is as <br className='hidden lg:block'/>
-                    clear as day: to shape the future. Whether you're a coding genius, a <br className='hidden lg:block'/>
-                    design maverick, or a concept wizard, you'll have the chance to transform <br className='hidden lg:block'/>
-                    your ideas into reality. Solving real-world problems, pushing the boundaries <br className='hidden lg:block'/>
-                    of technology, and creating solutions that can change the world, <br className='hidden lg:block'/>
+                <div className='text-[80%] lg:text-start text-center leading-relaxed'>Our tech hackathon is a melting pot of<br className='block lg:hidden'/> visionaries, and its purpose is as <br className='hidden lg:block'/>
+                    clear as day:<br className='block lg:hidden'/> to shape the future. Whether you're a coding<br className='block lg:hidden'/> genius, a <br className='hidden lg:block'/>
+                    design maverick, or a concept<br className='block lg:hidden'/> wizard, you'll have the chance to transform <br/>
+                    your ideas into reality. Solving real-world<br className='block lg:hidden'/> problems, pushing the boundaries <br className='hidden lg:block'/>
+                    of<br className='block lg:hidden'/> technology, and creating solutions that can<br className='block lg:hidden'/> change the world,<br className='hidden lg:block'/>
                     that's what we're all about!</div>
             </div>
             <div className='lg:w-[50%] w-[100%] py-[5vh] relative'>

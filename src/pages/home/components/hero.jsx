@@ -23,7 +23,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="lg:h-[85vh] h-[87vh] max-w-[1440px] flex lg:flex-row flex-col px-[5vw] border-b border-[#2c233e]">
+    <div className="lg:h-[85vh] h-[87vh]  max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col px-[5vw] border-b border-[#2c233e]">
       {/*  designs--------------------------------------------------------------------------- */}
       <div className="glow-circle absolute z-[0] left-[20vw] top-[20vh]"></div>
       <div className="glow-circle absolute bottom-0 z-[0] right-[20vw] top-[35vh]"></div>

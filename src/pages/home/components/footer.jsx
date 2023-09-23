@@ -13,7 +13,7 @@ import star5 from "/star5.png";
 
 function Footer() {
   return (
-    <div className="max-w-[1440px] flex flex-col items-center py-[5vh] space-y-[6vh] px-[5vw] bg-[#110b20] relative z-[-99]">
+    <div className=" max-w-[100vw] lg:max-w-[1440px] flex flex-col items-center py-[5vh] space-y-[6vh] px-[5vw] bg-[#110b20] relative z-[-99]">
 
         
             {/*  designs--------------------------------------------------------------------------- */}
@@ -23,7 +23,7 @@ function Footer() {
             <img src={star5} className="absolute top-[25vh] left-[86%]" />
             {/*  designs  ends--------------------------------------------------------------------------- */}
 
-      <div className="flex lg:flex-row flex-col justify-evenly w-[100%]">
+      <div className="flex lg:flex-row flex-col items-start justify-evenly w-[100%]">
         <div className="lg:w-[50%] w-[100%]">
           <div className="w-[35vw] text-[2rem] font-bold tracking-tight mb-3">
             get<span className="text-[#d434fe]">linked</span>

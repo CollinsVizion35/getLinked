@@ -10,7 +10,7 @@ import star5 from "/star5.png";
 
 function Privacy() {
   return (
-    <div className="lg:h-[100vh] h-[150vh]  max-w-[1440px] flex lg:flex-row flex-col lg:text-start text-center items-center px-[5vw] py-[5vh] relative justify-around">
+    <div className="lg:h-[100vh] h-[150vh]   max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col lg:text-start text-center items-center px-[5vw] py-[5vh] relative justify-around">
       {/* design ---------------------------------------------------- */}
       <div className="glow-circle absolute bottom-[5vh] z-[0] left-[15%]"></div>
       <img src={satapu} className="absolute top-[20vh] left-[45%]" />

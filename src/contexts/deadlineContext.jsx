@@ -15,7 +15,7 @@ const getDaysBetweenDates = (startDate, endDate) => {
   return Math.ceil((endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24));
 };
 
-const daysDifference = getDaysBetweenDates(currentDate, new Date("2023-09-23")); //"year-month-day"
+const daysDifference = getDaysBetweenDates(currentDate, new Date("2023-09-27")); //"year-month-day"
 // const daysDifference = getDaysBetweenDates(currentDate, new Date("2023-08-11")) - 1;
 
 const currentYear = now.getUTCFullYear();
@@ -34,7 +34,7 @@ const deadlineTime = new Date(
     const total = deadlineTime.getTime() - Date.now();
     const seconds = Math.floor((total / 1000) % 60);
     const minutes = Math.floor((total / 1000 / 60) % 60);
-    const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+    const hours = Math.floor(total / (1000 * 60 * 60));
     const days = Math.floor(total / (1000 * 60 * 60 * 24));
 
     return {

@@ -13,9 +13,9 @@ import star5 from "/star5.png";
 
 function Partner() {
   return (
-    <div className="lg:h-[100vh] max-w-[1440px] flex flex-col items-center px-[5vw] py-[5vh] border-b border-[#2c233e] relative">
+    <div className="lg:h-[100vh]  max-w-[100vw] lg:max-w-[1440px] flex flex-col items-center px-[5vw] py-[5vh] mx-auto border-b border-[#2c233e] relative">
         {/* design ---------------------------------------------------- */}
-            <div className="glow-circle absolute z-[0] left-[10vw] top-[20vh]"></div>
+            <div className="glow-circle absolute z-[0] left-[10%] top-[20vh]"></div>
             <div className="glow-circle absolute bottom-[5vh] z-[0] right-0"></div>
             <img src={satagra} className="absolute top-[20vh] left-[20%]" />
             <img src={satagra} className="absolute top-[30vh] left-[53%]" />
@@ -37,7 +37,7 @@ function Partner() {
         </div>
       </div>
 
-      <div className="flex flex-row lg:py-[15vh] py-[5vh] lg:px-[15vw] px-[5vw] border rounded-[2%] border-[#d434fe] space-x-[12%]  items-center justify-start">
+      <div className="flex flex-row lg:py-[15vh] py-[5vh] lg:px-[15vw] px-[5vw] border rounded-[2%] border-[#d434fe] space-x-[12%]  items-center">
       <div className="flex flex-col items-center space-y-[10vh] w-[100%]">
         <img src={liberty} alt="Liberty assured logo" className="w-[60%] h-[6vh]"/>
         <img src={wisper} alt="whispersms logo" className="w-[60%] h-[6vh]"/>

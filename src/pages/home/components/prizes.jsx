@@ -9,7 +9,7 @@ import star5 from "/star5.png";
 
 function Prizes() {
   return (
-    <div className="h-[100vh] max-w-[1440px] flex lg:flex-row flex-col px-[5vw] bg-[#110b20] relative">
+    <div className="h-[100vh]  max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col px-[5vw] bg-[#110b20] relative">
 
         
             {/*  designs--------------------------------------------------------------------------- */}
@@ -36,7 +36,7 @@ function Prizes() {
         </div>
 
       <div className="lg:w-[40%] py-[5vh] flex items-baseline z-[999]">
-        <img src={cup} alt="trophy" className="lg:h-[70vh] h-[30vh] mt-auto lg:mb-[5vh]"/>
+        <img src={cup} alt="trophy" className="lg:h-[70vh] h-[30vh] mt-auto lg:mb-[5vh] mx-auto"/>
       </div>
       <div className="lg:w-[60%] lg:py-[5vh] flex flex-col items-center">
         <div className="lg:block hidden">
