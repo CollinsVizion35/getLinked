@@ -10,10 +10,11 @@ import satagra from '/sata gra.png'
 import satapu from '/star pu.png'
 import star4 from "/star4.png";
 import star5 from "/star5.png";
+import { Fade, JackInTheBox } from "react-awesome-reveal";
 
 function Footer() {
   return (
-    <div className=" max-w-[100vw] lg:max-w-[1440px] flex flex-col items-center py-[5vh] space-y-[6vh] px-[5vw] bg-[#110b20] relative z-[-99]">
+    <JackInTheBox duration={5000}><div className=" max-w-[100vw] lg:max-w-[1440px] flex flex-col items-center py-[5vh] space-y-[6vh] px-[5vw] bg-[#110b20] relative z-[-99]">
 
 
       {/*  designs--------------------------------------------------------------------------- */}
@@ -67,7 +68,7 @@ function Footer() {
         </div>
       </div>
       <div className="text-[0.8em] lg:text-[1em] pb-[5vh]">All rights reserved. © getlinked Ltd.</div>
-    </div>
+    </div></JackInTheBox>
   );
 }
 

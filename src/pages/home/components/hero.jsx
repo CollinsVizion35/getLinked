@@ -40,8 +40,8 @@ function Hero() {
   return (
     <div className="lg:h-[85vh]  h-auto lg:mt-[15vh] mt-[0vh]  max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col px-[5vw] border-b border-[#2c233e]">
       {/*  designs--------------------------------------------------------------------------- */}
-      <div className="glow-circle absolute  left-[20vw] top-[20vh] z-[-99]"></div>
-      <div className="glow-circle lg:block hidden absolute bottom-0  right-[20vw] top-[35vh] z-[-99]"></div>
+      <div className="glow-circle absolute  left-[20vw] top-[20vh] "></div>
+      <div className="glow-circle lg:block hidden absolute bottom-0  right-[20vw] top-[35vh] "></div>
       <img src={star} className="twink2 absolute top-[20vh] left-[20vw]" />
       <img src={star2} className="twink5 absolute top-[25vh] left-[55vw]" />
       <img src={star3} className="twink3 absolute bottom-[25vh] left-[35vw]" />
@@ -89,7 +89,7 @@ function Hero() {
         </div></Slide>
 
       </div>
-      <div className="lg:w-[50%] h-fit z-[-9] mt-[5vh] lg:mt-0">
+      <div className="lg:w-[50%] h-fit mt-[5vh] lg:mt-0">
         <div className="absolute w-full h-[85vh] hidden lg:block bg-[#150e28] z-[999999] right-0 opacity-10"></div>
         <div className="mb-[5vh] relative hidden lg:flex">
           <div className="text-[2.8vh] font-bold">

@@ -7,6 +7,7 @@ import satagra from "/sata gra.png";
 import satapu from "/star pu.png";
 import star4 from "/star4.png";
 import star5 from "/star5.png";
+import { JackInTheBox, Slide } from "react-awesome-reveal";
 
 function Privacy() {
   return (
@@ -24,18 +25,18 @@ function Privacy() {
 
       <div className="lg:w-[50%] flex flex-col space-y-6">
         <div className="space-y-3">
-          <div className="text-[1.5rem] font-bold z-[999]">
+          <Slide duration={5000} direction="left"><div className="text-[1.5rem] font-bold z-[999]">
             Privacy Policy and
             <br/>
             <span className="text-[#d434fe] w-[50%]">Terms</span>
-          </div>
-          <div className="text-[1.5vh]">Last updated on September 12, 2023</div>
+          </div></Slide>
+          <Slide duration={5000} direction="left"><div className="text-[1.5vh]">Last updated on September 12, 2023</div></Slide>
         </div>
-        <div className="text-[1.5vh]">
+        <Slide duration={5000} direction="left"><div className="text-[1.5vh]">
           Below are our privacy & policy, which outline a lot of goodies. <br className="hidden lg:block"/>
           it’s our aim to always take of our participant
-        </div>
-        <div className="text-[1.5vh] flex flex-col border rounded-[5px] border-[#d434fe] w-[90%] space-y-6 p-10 mx-auto lg:mx-0">
+        </div></Slide>
+        <Slide duration={5000} direction="left"><div className="text-[1.5vh] flex flex-col border rounded-[5px] border-[#d434fe] w-[90%] space-y-6 p-10 mx-auto lg:mx-0">
           <div>
             At getlinked tech Hackathon 1.0, we value your privacy
             <br className="hidden lg:block"/>
@@ -67,10 +68,10 @@ function Privacy() {
           <button className="w-fit flex items-center justify-center mx-auto">
             Read More
           </button>
-        </div>
+        </div></Slide>
       </div>
       <div className="relative w-[50%] mt-[5vh] lg:mt-0">
-        <img src={manLock} alt="man on lock" className="z-[99] lg:h-[80vh] h-[50vh] w-[70%] ml-[15%]" />
+        <JackInTheBox duration={5000}><img src={manLock} alt="man on lock" className="z-[99] lg:h-[80vh] h-[50vh] w-[70%] ml-[15%]" /></JackInTheBox>
         <img
           src={secure}
           alt="secure logo"

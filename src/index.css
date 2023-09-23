@@ -38,6 +38,8 @@ body {
   max-width: 1440px;
   overflow-x: hidden;
   cursor: url('/sata gra.png'), auto;
+  
+  background-color: #150e28;
 }
 
 h1 {

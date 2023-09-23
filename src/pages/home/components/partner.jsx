@@ -11,6 +11,9 @@ import satapu from '/star pu.png'
 import star4 from "/star4.png";
 import star5 from "/star5.png";
 
+
+import { Fade, Slide } from "react-awesome-reveal";
+
 function Partner() {
   return (
     <div className="lg:h-[100vh]  w-[100vw] lg:max-w-[1440px] flex flex-col items-center px-[5vw] py-[5vh]  border-b border-[#2c233e] relative">
