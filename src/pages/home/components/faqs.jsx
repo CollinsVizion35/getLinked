@@ -7,6 +7,7 @@ import satagra from '/sata gra.png'
 import satapu from '/star pu.png'
 import star4 from "/star4.png";
 import star5 from "/star5.png";
+import { Fade, JackInTheBox, Slide } from 'react-awesome-reveal'
 
 
 const faqData = [
@@ -36,7 +37,7 @@ const faqData = [
   },
 ];
 
-function Faqs () {
+function Faqs() {
 
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -50,45 +51,45 @@ function Faqs () {
   return (
     <div className='lg:h-[100vh] h-fit py-6 max-w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col items-center px-[5vw] border-b border-[#2c233e] relative'>
 
-         {/*  designs--------------------------------------------------------------------------- */}
-            <img src={satapu} className="twink4 absolute top-[10vh] left-[2%]" />
-            <img src={star4} className="twink3 absolute top-[48vh] left-[50%]" />
-            <img src={star5} className="twink5 absolute top-[85vh] left-[81%]" />
-            <img src={satagra} className="twink2 absolute top-[25vh] left-[55%]" />
-            <img src={satagra} className="twink6 absolute top-[10vh] left-[67%]" />
-            <img src={ques} className="absolute bottom-[40vh] lg:top-[9vh] left-[22%] lg:left-[53%] h-[8vh]" />
-            <img src={ques2} className="absolute bottom-[42vh] lg:top-[5vh] left-[40%] lg:left-[61%] h-[8vh]" />
-            <img src={ques} className="absolute bottom-[39vh] lg:top-[10vh] left-[53%] lg:left-[73%] h-[8vh]" />
-            {/*  designs  ends--------------------------------------------------------------------------- */}
+      {/*  designs--------------------------------------------------------------------------- */}
+      <img src={satapu} className="twink4 absolute top-[10vh] left-[2%]" />
+      <img src={star4} className="twink3 absolute top-[48vh] left-[50%]" />
+      <img src={star5} className="twink5 absolute top-[85vh] left-[81%]" />
+      <img src={satagra} className="twink2 absolute top-[25vh] left-[55%]" />
+      <img src={satagra} className="twink6 absolute top-[10vh] left-[67%]" />
+      <img src={ques} className="absolute bottom-[40vh] lg:top-[9vh] left-[22%] lg:left-[53%] h-[8vh]" />
+      <img src={ques2} className="absolute bottom-[42vh] lg:top-[5vh] left-[40%] lg:left-[61%] h-[8vh]" />
+      <img src={ques} className="absolute bottom-[39vh] lg:top-[10vh] left-[53%] lg:left-[73%] h-[8vh]" />
+      {/*  designs  ends--------------------------------------------------------------------------- */}
       <div className='lg:w-[40vw]  ml-[5%]'>
-        <div className='lg:text-[1.5rem] text-[1em] font-bold lg:mb-6 mb-3 lg:text-start text-center mt-[3vh] lg:mt-0'>
+        <Fade duration={3000}><div className='lg:text-[1.5rem] text-[1em] font-bold lg:mb-6 mb-3 lg:text-start text-center mt-[3vh] lg:mt-0'>
           Frequently Ask
           <br />
           <span className='text-[#d434fe] w-[50%]'>Question</span>
-        </div>
-        <div className='mb-6 lg:text-start text-center text-[0.8em] lg:text-[1em]'>
+        </div></Fade>
+        <Fade duration={3000} delay={500}><div className='mb-6 lg:text-start text-center text-[0.8em] lg:text-[1em]'>
           We got answers to the questions that you might
-          <br  className='hidden lg:block'/>
+          <br className='hidden lg:block' />
           want to ask about getlinked Hackathon 1.0
-        </div>
+        </div></Fade>
         <div className='flex flex-col space-y-3'>
-        {faqData.map((item, index) => (
-        <div key={index} className={`flex flex-col faq-item border-b border-[#d434fe] ${openIndex === index ? 'active' : ''}`}>
-          <div className="flex flex-row justify-between items-center p-2 text-sm" onClick={() => toggleAnswer(index)}>
-            <div>{item.question}</div>
-            <div className="text-[#d434fe] cursor-pointer">
-              {openIndex === index ? '-' : '+'}
+          {faqData.map((item, index) => (
+            <div key={index} className={`flex flex-col faq-item border-b border-[#d434fe] ${openIndex === index ? 'active' : ''}`}>
+              <Slide direction="right" duration={5000} ><div className="flex flex-row justify-between items-center p-2 text-sm" onClick={() => toggleAnswer(index)}>
+                <div>{item.question}</div>
+                <div className="text-[#d434fe] cursor-pointer">
+                  {openIndex === index ? '-' : '+'}
+                </div>
+              </div>
+              <div className={`answer text-[0.7em] transition-opacity  ${openIndex === index ? 'opacity-100 p-2 duration-500' : 'opacity-0 h-0 p-0 duration-0'}`}>
+                {item.answer}
+              </div></Slide>
             </div>
-          </div>
-          <div className={`answer text-[0.7em] transition-opacity  ${openIndex === index ? 'opacity-100 p-2 duration-500' : 'opacity-0 h-0 p-0 duration-0'}`}>
-            {item.answer}
-          </div>
-        </div>
-      ))}
+          ))}
         </div>
       </div>
       <div className='w-[60vw]'>
-        <img src={manThink} alt='man Thinking' className='lg:h-[75vh] h-[40vh] ml-[5%] mt-[17.5vh] lg:mt-0 w-[90%]' />
+      <JackInTheBox duration={5000}><img src={manThink} alt='man Thinking' className='lg:h-[75vh] h-[40vh] ml-[5%] mt-[17.5vh] lg:mt-0 w-[90%]' /></JackInTheBox>
       </div>
     </div>
   )
