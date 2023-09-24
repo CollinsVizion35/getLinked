@@ -9,7 +9,7 @@ import { Fade, JackInTheBox, Slide } from "react-awesome-reveal";
 
 function Intro() {
   return (
-    <div className="lg:min-h-[50vh] min-h-[100vh]  mx-auto w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col items-center px-[5%] relative border-b border-[#2c233e]">
+    <div className="lg:min-h-[50vh] min-h-[100vh]  mx-auto w-[100vw] flex lg:flex-row flex-col items-center px-[5%] relative border-b border-[#2c233e]">
       {/*  designs--------------------------------------------------------------------------- */}
       <img src={satagra} className="twink6 absolute top-[20vh] left-[5%]" />
       <img src={satapu} className="twink4 absolute top-[20vh] right-[10%]" />

@@ -46,7 +46,7 @@ function Faqs() {
   };
 
   return (
-    <div className="lg:h-[100vh] h-fit py-6  mx-auto w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col items-center px-[5vw] border-b border-[#2c233e] relative">
+    <div className="lg:h-[100vh] h-fit py-6  mx-auto w-[100vw] flex lg:flex-row flex-col items-center px-[5vw] border-b border-[#2c233e] relative">
       {/*  designs--------------------------------------------------------------------------- */}
       <img src={satapu} className="twink4 absolute top-[10vh] left-[2%]" />
       <img src={star4} className="twink3 absolute top-[48vh] left-[50%]" />

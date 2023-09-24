@@ -8,7 +8,7 @@ import { Bounce, Fade, JackInTheBox } from 'react-awesome-reveal'
 function Timeline () {
   return (
     <Bounce duration={5000}>
-      <div className='lg:h-[170vh]   mx-auto w-[100vw] lg:max-w-[1440px] flex flex-col items-center justify-center px-[5vw] py-[5vh] relative'>
+      <div className='lg:h-[170vh]   mx-auto w-[100vw] flex flex-col items-center justify-center px-[5vw] py-[5vh] relative'>
         {/*  designs--------------------------------------------------------------------------- */}
 
         <img src={satapu} className='twink1 absolute top-[28vh] left-[30%]' />

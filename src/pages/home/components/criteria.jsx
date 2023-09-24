@@ -9,7 +9,7 @@ import { Bounce, Fade, Hinge, Slide } from "react-awesome-reveal";
 
 function Criteria() {
   return (
-    <div className="lg:h-[100vh] h-fit py-6   mx-auto w-[100vw] lg:max-w-[1440px] lg:text-start text-center flex lg:flex-row flex-col items-center px-[5vw] border-b border-[#2c233e] relative">
+    <div className="lg:h-[100vh] h-fit py-6   mx-auto w-[100vw] lg:text-start text-center flex lg:flex-row flex-col items-center px-[5vw] border-b border-[#2c233e] relative">
       {/*  designs--------------------------------------------------------------------------- */}
       <div className="glow-circle absolute z-[0] lg:bottom-[10vh] top-[20vh] left-[25%] lg:left-auto"></div>
       <div className="glow-circle absolute lg:bottom-[-10vh] top-[90vh] z-[0] right-0"></div>

@@ -36,7 +36,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="lg:h-[85vh]  h-auto lg:mt-[15vh] mt-[0vh] mx-auto w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col px-[5vw] border-b border-[#2c233e]">
+    <div className="lg:h-[85vh]  h-auto lg:mt-[15vh] mt-[0vh] mx-auto w-[100vw] flex lg:flex-row flex-col px-[5vw] border-b border-[#2c233e]">
       {/*  designs--------------------------------------------------------------------------- */}
       <div className="glow-circle absolute  left-[20vw] top-[20vh] "></div>
       <div className="glow-circle lg:block hidden absolute bottom-0  right-[20vw] top-[35vh] "></div>

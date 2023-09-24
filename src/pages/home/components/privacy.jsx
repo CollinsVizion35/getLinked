@@ -11,7 +11,7 @@ import { JackInTheBox, Slide } from "react-awesome-reveal";
 
 function Privacy() {
   return (
-    <div className="lg:h-[100vh] h-fit  mx-auto w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col lg:text-start text-center items-center px-[5vw] py-[5vh] relative justify-around">
+    <div className="lg:h-[100vh] h-fit  mx-auto w-[100vw] flex lg:flex-row flex-col lg:text-start text-center items-center px-[5vw] py-[5vh] relative justify-around">
       {/* design ---------------------------------------------------- */}
       <div className="glow-circle absolute lg:bottom-[5vh] bottom-[80vh] z-[0] left-[15%]"></div>
       <img src={satapu} className="twink1 absolute top-[20vh] left-[45%]" />
@@ -95,7 +95,7 @@ function Privacy() {
         <img
           src={secure}
           alt="secure logo"
-          className="absolute top-0 z-[-99] lg:h-[50vh] h-[25vh] w-[70%] ml-[15%]"
+          className="absolute top-0 z-0 lg:h-[50vh] h-[25vh] w-[70%] ml-[15%]"
         />
       </div>
     </div>

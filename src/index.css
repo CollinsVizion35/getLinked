@@ -39,7 +39,7 @@ body {
   cursor: url("/sata gra.png"), auto;
   color: white;
   background-color: #150e28;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 h1 {

@@ -11,7 +11,7 @@ import { JackInTheBox } from "react-awesome-reveal";
 function Prizes() {
   return (
     <JackInTheBox duration={5000}>
-      <div className="lg:h-[100vh] py-6  mx-auto w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col px-[5vw] bg-[#110b20] relative">
+      <div className="lg:h-[100vh] py-6  mx-auto w-[100vw] flex lg:flex-row flex-col px-[5vw] bg-[#110b20] relative">
         {/*  designs--------------------------------------------------------------------------- */}
         <div className="glow-circle absolute z-[0] left-[20vw] top-[30vh]"></div>
         <div className="glow-circle absolute bottom-[5vh] z-[0] right-[-10vw]"></div>

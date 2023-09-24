@@ -96,7 +96,7 @@ function RegisterBox() {
   };
 
   return (
-    <div className="lg:h-[85vh] h-fit lg:mt-[15vh] w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col items-center px-[10vw]">
+    <div className="lg:h-[85vh] h-fit lg:mt-[15vh] w-[100vw] flex lg:flex-row flex-col items-center px-[10vw]">
       {/* design ---------------------------------------------------- */}
       <div className="glow-circle absolute left-[5%] top-[20vh] z-[-99]"></div>
       <div className="glow-circle absolute bottom-[5vh] right-0 z-[-99]"></div>

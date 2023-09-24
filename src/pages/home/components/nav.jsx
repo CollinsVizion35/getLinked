@@ -26,7 +26,7 @@ function Nav() {
   return (
     <>
       <div className="lgView fixed top-0 left-0 bg-[#150e28] bg-opacity-90 ml-0 w-[100%] border-b border-[#2c233e] z-[99999999999999]">
-        <div className=" h-[15vh] hidden items-center  lg:max-w-[1440px] mx-auto  pt-[5vh] pb-[2vh] px-[5%] lg:flex flex-row">
+        <div className=" h-[15vh] hidden items-center  mx-auto  pt-[5vh] pb-[2vh] px-[5%] lg:flex flex-row">
           <div
             className="w-[30vw] text-[2rem] font-bold tracking-tight cursor-pointer"
             onClick={() => navigate("/")}

@@ -15,7 +15,7 @@ import { Fade, JackInTheBox } from "react-awesome-reveal";
 function Footer() {
   return (
     <JackInTheBox duration={5000}>
-      <div className="  mx-auto w-[100vw] lg:max-w-[1440px] flex flex-col items-center py-[5vh] space-y-[6vh] px-[5vw] bg-[#110b20] relative z-[-99]">
+      <div className="  mx-auto w-[100vw] flex flex-col items-center py-[5vh] space-y-[6vh] px-[5vw] bg-[#110b20] relative z-[-99]">
         {/*  designs--------------------------------------------------------------------------- */}
         <img src={satagra} className="absolute top-[30vh] left-[45%]" />
         <img src={star4} className="twink5 absolute top-[9vh] left-[68%]" />

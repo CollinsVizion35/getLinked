@@ -8,7 +8,7 @@ import { Slide, JackInTheBox, Fade } from "react-awesome-reveal";
 
 function Rules() {
   return (
-    <div className="min-h-[50vh]   mx-auto w-[100vw] lg:max-w-[1440px] flex lg:flex-row flex-col-reverse items-center px-[5%] py-[5vh] lg:py-0 relative border-b border-[#2c233e]">
+    <div className="min-h-[50vh]   mx-auto w-[100vw] flex lg:flex-row flex-col-reverse items-center px-[5%] py-[5vh] lg:py-0 relative border-b border-[#2c233e]">
       {/*  designs--------------------------------------------------------------------------- */}
       <div className="glow-circle absolute z-[0] left-[20vw] top-[10vh]"></div>
       <div className="glow-circle absolute lg:bottom-[-2vh] top-[50vh] z-[0] right-[-5vw]"></div>

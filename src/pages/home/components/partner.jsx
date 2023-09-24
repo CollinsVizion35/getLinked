@@ -15,7 +15,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 function Partner() {
   return (
-    <div className="lg:h-[100vh]   mx-auto w-[100vw] lg:max-w-[1440px] flex flex-col items-center px-[5vw] py-[5vh]  border-b border-[#2c233e] relative">
+    <div className="lg:h-[100vh]   mx-auto w-[100vw] flex flex-col items-center px-[5vw] py-[5vh]  border-b border-[#2c233e] relative">
       {/* design ---------------------------------------------------- */}
       <div className="glow-circle absolute z-[0] left-[10%] top-[20vh]"></div>
       <div className="glow-circle absolute bottom-[5vh] z-[0] right-0"></div>
