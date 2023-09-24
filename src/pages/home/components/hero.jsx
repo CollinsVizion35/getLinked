@@ -17,22 +17,15 @@ import { useNavigate } from "react-router-dom";
 
 function Hero() {
   const navigate = useNavigate();
-  const [display, setDisplay] = useState("none");
+  const [display, setDisplay] = useState("block");
+
 
   useEffect(() => {
-    const timeout1 = setTimeout(() => {
-      setDisplay("block");
-    }, 3000);
-
-    return () => clearTimeout(timeout1);
-  }, []);
-
-  useEffect(() => {
-    const timeout2 = setTimeout(() => {
+    const timeout = setTimeout(() => {
       setDisplay("none");
-    }, 5500);
+    }, 2500);
 
-    return () => clearTimeout(timeout2);
+    return () => clearTimeout(timeout);
   }, []);
 
   return (

@@ -311,7 +311,6 @@ button:focus-visible {
   background-color: #e5e404;
   box-shadow: 0 0 20px 20px #e5e404;
   animation: bulb 3s 1 alternate;
-  animation-delay: 4s;
   /* display: none; */
 }
 
