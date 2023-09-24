@@ -287,7 +287,7 @@ function RegisterBox() {
               </div>
             </div>
 
-            <div className="text-[#d434fe]  text-[0.6em]">
+            <div className="text-[#d434fe]  text-[0.6em] py-3">
               Please review your registration details before submitting
             </div>
             <div className="text-[0.6em] flex flex-row items-center space-x-2">
@@ -300,12 +300,12 @@ function RegisterBox() {
                   setPrivacy_policy_accepted(event.target.value)
                 }
               />
-              <div>
+              <div className="py-3">
                 I agreed with the event terms and conditions and privacy policy
               </div>
             </div>
 
-            <button className="button mb-3" onClick={handleSubmit}>
+            <button className="button mb-3 py-3" onClick={handleSubmit}>
               Submit
             </button>
           </form>
