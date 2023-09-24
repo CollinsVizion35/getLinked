@@ -31,6 +31,8 @@ function Hero() {
   return (
     <div className="lg:h-[85vh]  h-auto lg:mt-[15vh] mt-[0vh] mx-auto w-[100vw] flex lg:flex-row flex-col px-[5vw] border-b border-[#2c233e]">
       {/*  designs--------------------------------------------------------------------------- */}
+      <div className="absolute box border border-black h-[60vh] w-[40vw] right-[5vw] bottom-[15vh]"></div>
+      <div className="absolute box border border-black h-[70vh] w-[50vw] right-[2vw] bottom-0"></div>
       <div className="glow-circle absolute  left-[20vw] top-[20vh] "></div>
       <div className="glow-circle lg:block hidden absolute bottom-0  right-[20vw] top-[35vh] "></div>
       <img src={star} className="twink2 absolute top-[20vh] left-[20vw]" />
