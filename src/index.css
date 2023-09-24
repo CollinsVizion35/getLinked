@@ -31,7 +31,6 @@ a:hover {
 }
 
 body {
-  margin: auto;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -40,6 +39,7 @@ body {
   cursor: url("/sata gra.png"), auto;
   color: white;
   background-color: #150e28;
+  margin-left: auto;
 }
 
 h1 {
