@@ -30,7 +30,7 @@ function Timeline () {
         </div>
 
         <div className='lg:hidden text-start w-[70%] flex flex-col items-center justify-center'>
-          <div className='flex flex-col mb-[5vh] h-[15vh] '>
+          <div className='flex flex-col mb-[5vh] w-full h-[15vh] justify-between'>
             <div className='ml-[10%]'>
               <div className='text-[#d434fe] font-bold mb-[1vh] text-[0.7em]'>
                 Hackathon Announcement
@@ -48,7 +48,7 @@ function Timeline () {
             </div>
           </div>
 
-          <div className='flex flex-col mb-[5vh] h-[15vh] justify-between'>
+          <div className='flex flex-col mb-[5vh] w-full h-[15vh] justify-between'>
             <div className='ml-[10%]'>
               <div className='text-[#d434fe] font-bold mb-[1vh] text-[0.7em]'>
                 Teams Registration begins
@@ -66,7 +66,7 @@ function Timeline () {
             </div>
           </div>
 
-          <div className='flex flex-col mb-[5vh] h-[15vh] justify-between'>
+          <div className='flex flex-col mb-[5vh] w-full h-[15vh] justify-between'>
             <div className='ml-[10%]'>
               <div className='text-[#d434fe] font-bold mb-[1vh] text-[0.7em]'>
                 Teams Registration ends
@@ -83,7 +83,7 @@ function Timeline () {
             </div>
           </div>
 
-          <div className='flex flex-col mb-[5vh] h-[15vh] justify-between'>
+          <div className='flex flex-col mb-[5vh] w-full h-[15vh] justify-between'>
             <div className='ml-[10%]'>
               <div className='text-[#d434fe] font-bold mb-[1vh] text-[0.7em]'>
                 Announcement of the accepted teams and ideas
@@ -101,7 +101,7 @@ function Timeline () {
             </div>
           </div>
 
-          <div className='flex flex-col mb-[5vh] h-[15vh] justify-between'>
+          <div className='flex flex-col mb-[5vh] w-full h-[15vh] justify-between'>
             <div className='ml-[10%]'>
               <div className='text-[#d434fe] font-bold mb-[1vh] text-[0.7em]'>
                 Getlinked Hackathon 1.0 Offically Begins
@@ -119,7 +119,7 @@ function Timeline () {
             </div>
           </div>
 
-          <div className='flex flex-col mb-[5vh] h-[15vh] justify-between'>
+          <div className='flex flex-col mb-[5vh] w-full h-[15vh] justify-between'>
             <div className='ml-[10%]'>
               <div className='text-[#d434fe] font-bold mb-[1vh] text-[0.7em]'>
                 Demo Day

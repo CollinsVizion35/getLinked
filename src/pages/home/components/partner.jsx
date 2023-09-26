@@ -23,13 +23,13 @@ function Partner() {
       <img src={satagra} className="twink2 absolute top-[30vh] left-[53%]" />
       <img src={star5} className="twink1 absolute top-[62vh] left-[53%]" />
 
-      <div className="bar lg:h-[15vh] h-[10vh] absolute w-[1px] lg:min-w-[0.2%] left-[42%] top-[34vh] lg:top-[36vh]"></div>
-      <div className="bar lg:h-[15vh] h-[10vh] absolute w-[1px] lg:min-w-[0.2%] right-[42%] top-[34vh] lg:top-[36vh]"></div>
-      <div className="bar lg:h-[15vh] h-[10vh] absolute w-[1px] lg:min-w-[0.2%] left-[42%] top-[48vh] lg:top-[58vh]"></div>
-      <div className="bar lg:h-[15vh] h-[10vh] absolute w-[1px] lg:min-w-[0.2%] right-[42%] top-[48vh] lg:top-[58vh]"></div>
-      <div className="bar w-[12%] absolute min-h-[0.2%] left-[28%] top-[46vh] lg:top-[54.5vh]"></div>
-      <div className="bar w-[12%] absolute min-h-[0.2%] top-[46vh] lg:top-[54.5vh]"></div>
-      <div className="bar w-[12%] absolute min-h-[0.2%] right-[28%] top-[46vh] lg:top-[54.5vh]"></div>
+      <div className="bar lg:h-[15vh] h-[10vh] absolute w-[1px] lg:min-w-[0.2%] left-[38%] lg:left-[42%] top-[34vh] lg:top-[36vh]"></div>
+      <div className="bar lg:h-[15vh] h-[10vh] absolute w-[1px] lg:min-w-[0.2%] right-[38%] lg:right-[42%] top-[34vh] lg:top-[36vh]"></div>
+      <div className="bar lg:h-[15vh] h-[10vh] absolute w-[1px] lg:min-w-[0.2%] left-[38%] lg:left-[42%] top-[48vh] lg:top-[58vh]"></div>
+      <div className="bar lg:h-[15vh] h-[10vh] absolute w-[1px] lg:min-w-[0.2%] right-[38%] lg:right-[42%] top-[48vh] lg:top-[58vh]"></div>
+      <div className="bar w-[12%] absolute min-h-[0.2vh] left-[20%] lg:left-[28%] top-[46vh] lg:top-[54.5vh]"></div>
+      <div className="bar w-[12%] absolute min-h-[0.2vh] top-[46vh] lg:top-[54.5vh]"></div>
+      <div className="bar w-[12%] absolute min-h-[0.2vh] right-[20%] lg:right-[28%] top-[46vh] lg:top-[54.5vh]"></div>
       {/* design ends ---------------------------------------------------- */}
       <div className="flex flex-col items-center justify-center text-center mb-[12vh]">
         <div className="font-bold text-[3vh] mb-[2vh]">
@@ -41,30 +41,30 @@ function Partner() {
         </div>
       </div>
 
-      <div className="flex flex-row lg:py-[15vh] py-[5vh] lg:px-[15vw] px-[5vw] w-[90%] justify-center border rounded-[2%] border-[#d434fe] space-x-[12%]  items-center">
+      <div className="flex flex-row lg:py-[15vh] py-[5vh] lg:px-[15vw] px-[5vw] w-[90%] justify-center border rounded-[2%] border-[#d434fe] lg:space-x-[12%]  items-center">
         <div className="flex flex-col items-center space-y-[10vh] w-[100%]">
           <img
             src={liberty}
             alt="Liberty assured logo"
-            className="w-[60%] h-[6vh]"
+            className="w-[60%] h-[6vh] "
           />
-          <img src={wisper} alt="whispersms logo" className="w-[60%] h-[6vh]" />
+          <img src={wisper} alt="whispersms logo" className="w-[60%] h-[6vh] " />
         </div>
         <div className="flex flex-col items-center space-y-[10vh] w-[100%]">
           <img
             src={libertyPay}
             alt="liberty pay logo"
-            className="w-[60%] h-[6vh]"
+            className="w-[60%] h-[6vh] "
           />
-          <img src={paybox} alt="paybox logo" className="w-[60%] h-[6vh]" />
+          <img src={paybox} alt="paybox logo" className="w-[60%] h-[6vh] " />
         </div>
 
         <div className="flex flex-col items-center space-y-[10vh] w-[100%]">
-          <img src={winwise} alt="winwise logo" className="w-[60%] h-[6vh]" />
+          <img src={winwise} alt="winwise logo" className="w-[60%] h-[6vh] " />
           <img
             src={vizual}
             alt="Vuzual plus logo"
-            className="w-[60%] h-[6vh]"
+            className="w-[60%] h-[6vh] "
           />
         </div>
       </div>

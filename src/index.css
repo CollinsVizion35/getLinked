@@ -497,3 +497,22 @@ button:focus-visible {
     background-color: #150e28;
   }
 }
+
+@media (orientation: landscape) {
+  .lightBall {
+    width: 30vw; 
+    height: 30vw; 
+    top: -5vh;
+    left: 30vw;
+  }
+
+  .ignite {
+    font-size: 5vh;
+  }
+
+  .deadline {
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+  }
+}
