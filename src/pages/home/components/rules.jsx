@@ -50,6 +50,12 @@ function Rules() {
         </Slide>
       </div>
       <div className="lg:w-[50%] w-[100%] py-[5vh] relative">
+        
+        <img
+          src={Ellipse1}
+          alt="pink circle"
+          className="absolute w-[12%] top-[11vh] right-[27%] z-[0]"
+        />
         <JackInTheBox duration={5000} delay={1000}>
           <img
             src={womanSit}
@@ -57,11 +63,6 @@ function Rules() {
             className="h-[50vh] lg:ml-[5%] w-[90%] z-[999] lg:h-[50vh] mx-auto"
           />
         </JackInTheBox>
-        <img
-          src={Ellipse1}
-          alt="pink circle"
-          className="absolute w-[12%] top-[11vh] right-[27%] z-[-99]"
-        />
       </div>
     </div>
   );

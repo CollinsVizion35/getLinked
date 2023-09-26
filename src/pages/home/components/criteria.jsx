@@ -19,14 +19,15 @@ function Criteria() {
       {/*  designs  ends--------------------------------------------------------------------------- */}
 
       <div className="w-[50%] relative mt-[3vh] lg:mt-0">
-        <Bounce duration={3000} triggerOnce>
-          <img src={manWoman} alt="man and woman" className="z-[9999]" />
-        </Bounce>
+        
         <img
           src={pinkEllipse}
           alt="pinkEllipse"
-          className="absolute top-[-2vw] left-[4vw] z-[-99] hidden lg:block"
+          className="absolute top-[-2vw] left-[4vw] z-[0] hidden lg:block"
         />
+        <Bounce duration={3000} triggerOnce>
+          <img src={manWoman} alt="man and woman" className="z-[99999999]" />
+        </Bounce>
       </div>
       <div className="lg:w-[50%] w-[90%] flex flex-col">
         <Fade duration={5000}>
