@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import manWoman from "/manWoman.png";
 import pinkEllipse from "/pinkEllipse.png";
 import satapu from "/star pu.png";
